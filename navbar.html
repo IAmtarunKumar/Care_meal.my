@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+     
+        box-sizing: border-box;
+    }
+    .top-nav{
+        width: 90%;
+        margin-left: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+
+    }
+
+    .top-nav>div:nth-child(2){
+        width: 15%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-nav>div:nth-child(2) img{
+        width: 80%;
+    }
+
+    .top-nav>div:nth-child(3){
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .top-nav>div:nth-child(3) a{
+            text-decoration: none;
+    }
+    .fb-btn{
+        background-color: #35619f;
+        color: white;
+        padding: 5px 15px 7px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        
+    }
+    .email-btn{
+        background-color: #666666;
+        color: white;
+        padding: 5px 15px 7px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px; 
+    }
+    .nav{
+        background-color: #2bb673;
+    }
+
+    .nav>ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    }
+ 
+    .nav>ul li{
+        list-style: none;
+        color: white;
+        font-size: 19px;
+        padding: 15px;
+    }
+    .nav>ul li:hover{
+        background-color: #0f8049bb;
+    }
+</style>
+<body>
+    
+    <div class="top-nav">
+        <div><a href=""><img width="110%" src="https://www.kindmeal.my/images/logo-kindmeal.png" alt=""></a></div>
+
+        <div>
+            <div><a href=""><img  src="https://www.kindmeal.my/images/follow_blog_grey.png" alt=""></a></div>
+            <div><a href=""><img src="https://www.kindmeal.my/images/follow_facebook_grey.png" alt=""></a></div>
+            <div><a href=""><img src="https://www.kindmeal.my/images/follow_twitter_grey.png" alt=""></a></div>
+        </div>
+        <div>
+            <div><a href="">
+                <p>Login</p>
+            </a></div>
+            <div><a href="">
+                <p class="fb-btn">Facebook</p>
+            </a></div>
+            <div><a href="">
+                <p class="email-btn">Email</p>
+            </a></div>
+            <div><a href="">
+                <p>| Sign Up</p>
+            </a></div>
+        </div>
+    </div>
+
+<div class="nav">
+    <ul>
+        <li a="">Home</li>
+        <li a="">Meal Deals</li>
+        <li a="">KindMoments</li>
+        <li a="">Recipes</li>
+        <li a="">Directory</li>
+        <li a="">Articles</li>
+        <li a="">Mobile App</li>
+        <li a="">Help</li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

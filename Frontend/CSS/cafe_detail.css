@@ -1,0 +1,280 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    box-sizing: border-box;
+}
+.top-nav{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+#logo{
+    width: 60%;
+    padding: 10px;
+}
+
+.top-nav>div:nth-child(2){
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav>div:nth-child(2) img{
+    width: 80%;
+}
+
+.top-nav>div:nth-child(3){
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav>div:nth-child(3) a{
+        text-decoration: none;
+}
+.fb-btn{
+    background-color: #35619f;
+    color: white;
+    padding: 5px 15px 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+.email-btn{
+    background-color: #666666;
+    color: white;
+    padding: 5px 15px 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px; 
+}
+.nav{
+    background-color: #2bb673;
+}
+
+.nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.nav>ul li{
+    list-style: none;
+    color: white;
+    font-size: 19px;
+    padding: 15px;
+}
+.nav>ul li:hover{
+    background-color: #0f8049bb;
+}
+.nav>ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* nav end  */
+ 
+/* main start  */
+
+.big-img{
+   
+    z-index: -1;
+}
+.photo{
+    height: 300px;
+    width: 300px;
+    border: 1px solid gray;
+    margin-left: 5%;
+    margin-top: -10%;
+    /* background-color: red; */
+   /* z-index: 1; */
+   position: relative;
+   left: 5%;
+  margin-top: -16%;
+ 
+
+}
+.options{
+    width: 75%;
+    margin-left: 25%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    font-size: 28px;
+    background-color: rgba(128, 128, 128, 0.508);
+    margin-top: -3.8%;
+    padding: 10px 10px 10px  10px;
+    background-color: #2bb673;
+
+}
+.options>div a{
+    text-decoration: none;
+    color: white;
+}
+
+/* details start  */
+
+.name{
+    width: 80%;
+    margin-left: 10%;
+    height: 50px;
+
+text-align: center;
+font-size: 30px;
+font-family: sans-serif;
+
+
+}
+.img{
+    width: 100%;
+    /* border-radius: 10px; */
+    /* padding: 10px; */
+   
+}
+ #price-div{
+    text-align: center;
+    
+ }
+ #price-div>p:nth-child(1){
+    font-size: 30px;
+   
+    color: gray;
+ }
+
+
+ #price-div>p:nth-child(2){
+    font-size: 35px;
+    font-weight: bold;
+
+ }
+
+ #price-div>p:nth-child(3){
+    font-size: 30px;
+   
+    color: lightgray;
+ }
+
+ #discount-div{
+    text-align: center;
+   
+ }
+
+
+ #discount-div>p:nth-child(1){
+    color: gray;
+   
+    font-size: 30px;
+    padding: 5px;
+    
+ }
+
+
+ #discount-div>p:nth-child(2){
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    color: red;
+    font-family: sans-serif;
+    padding: 10px
+    ;
+ }
+
+ #coupon{
+    text-align: center;
+ }
+ #coupon p{
+    font-size: 20px;
+    padding: 10px;
+ }
+ .coupon-btn{
+    font-size: 30px;
+ }
+
+
+
+
+.detail-data{
+width: 80%;
+/* height: 400px; */
+margin-left: 10%;
+border: 1px solid black;
+display: flex;
+   
+}
+
+.detail-data div{
+    border: 1px solid black;
+    width: 50%;
+}
+
+
+.detail-data>div:nth-child(2) div{
+   
+    width: 100%;
+    height: auto;
+}
+
+
+/* details end  */
+
+
+
+
+
+
+
+
+
+/* main end  */
+
+
+
+
+
+/* footer start  */
+#footer{
+    padding-top: 20px;
+    background-color: rgb(4,170,109);
+    color: white;
+}
+#footer>div:nth-child(1){
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li{
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+   line-height: 25px;
+    
+}
+#footer a:hover{
+    text-decoration: underline;
+    
+}
+#footer p{
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+   
+#footer center{
+    font-size: 14px;
+}
+/* footer end  */
+
+

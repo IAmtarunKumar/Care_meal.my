@@ -1,0 +1,106 @@
+[
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/4/498-2202-l.jpg",
+        "name" : "imperial Feast",
+        "title" : "Dine like an emperor on a variety of Japanese and Western meals! Feast on delightful items from our selected menu sections below:..",
+        "rating" : "4.5",
+        "shop" : "Imperial Art Cottage",
+        "discount" : "20%",
+        "expire" : "9-days",
+
+        "location" : "Kuala Lumpur",
+        "category" : "breakfast"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/4/467-2796-l.jpg",
+        "name" : "Nutritious Meets Delicious",
+        "title" : "Dine like an emperor on a variety of Japanese and Western meals! Feast on delightful items from our selected menu sections below:..",
+        "rating" : "4.5",
+        "shop" : "Alam N-lon",
+        "discount" : "20%",
+        "expire" : "9-days",
+
+        "location" : "Ampang",
+        "category" : "Pasta"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/5/529-2478-l.jpg",
+        "name" : "Scrumptious Croutons",
+        "title" : "Dine like an emperor on a variety of Japanese and Western meals! Feast on delightful items from our selected menu sections below:..",
+        "rating" : "4.5",
+        "shop" : "Lolla Paluza",
+        "discount" : "20%",
+        "expire" : "9-days",
+
+        "location" : "Bangsar",
+        "category" : "Burger"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/6/687-4507-l.jpg",
+        "name" : "Healthy, Homly Meal",
+        "title" : "Dine like an emperor on a variety of Japanese and Western meals! Feast on delightful items from our selected menu sections below:..",
+        "rating" : "4.5",
+        "shop" : "Hijau",
+        "discount" : "20%",
+        "expire" : "9-days",
+
+        "location" : "Cheras",
+        "category" : "Salad"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/6/684-4446-l.jpg ",
+        "name" : "Churros, Coffee & Meals",
+        "title" : "Think of Churros, think of PCLO Cafe! Each batch of eggless Churros is made with passion and from scratch in our kitchen. Which .. ",
+        "rating" : "4.5",
+        "shop" : "PCLO Cafe",
+        "discount" : "10%",
+        "expire" : "5-day",
+
+        "location" : "Kenpong",
+        "category" : "Indian"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/5/591-3151-l.jpg ",
+        "name" : "Vegipai's Fusion Indulgence",
+        "title" : "Think of Churros, think of PCLO Cafe! Each batch of eggless Churros is made with passion and from scratch in our kitchen. Which .. ",
+        "rating" : "4.5",
+        "shop" : "Vegipai Cafe",
+        "discount" : "10%",
+        "expire" : "5-day",
+
+        "location" : "Kuala Lumpur",
+        "category" : "Chinese"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/7/700-4802-l.jpg ",
+        "name" : "Midas Cuisine",
+        "title" : "Think of Churros, think of PCLO Cafe! Each batch of eggless Churros is made with passion and from scratch in our kitchen. Which .. ",
+        "rating" : "4.5",
+        "shop" : "Midas Cuisine",
+        "discount" : "12%",
+        "expire" : "6-day",
+
+        "location" : "Ampang",
+        "category" : "Indian"
+
+    },
+    {
+        "img" : "https://www.kindmeal.my/photos/deal/7/732-5374-l.jpg ",
+        "name" : "Authentic Classic Recipes",
+        "title" : "We provide the finest authentic plant-based cuisines, serving generational recipes since 1940s infused with meatless inspiration. .. ",
+        "rating" : "4.5",
+        "shop" : "Greenwell Kitchen",
+        "discount" : "13%",
+        "expire" : "1-day",
+
+        "location" : "Bangsar south",
+        "category" : "Chinese"
+
+    }
+]
