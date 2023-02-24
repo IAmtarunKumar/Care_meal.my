@@ -124,10 +124,12 @@
     width: 80%;
     margin-left: 10%;
     height: 50px;
-
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 text-align: center;
 font-size: 30px;
 font-family: sans-serif;
+padding: 5px;
+color:#2e96ff;
 
 
 }
@@ -187,13 +189,20 @@ font-family: sans-serif;
 
  #coupon{
     text-align: center;
+    
  }
  #coupon p{
     font-size: 20px;
     padding: 10px;
+    color: gray;
  }
  .coupon-btn{
     font-size: 30px;
+    background-color: #2e96ff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
  }
 
 
@@ -203,13 +212,13 @@ font-family: sans-serif;
 width: 80%;
 /* height: 400px; */
 margin-left: 10%;
-border: 1px solid black;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 display: flex;
    
 }
 
 .detail-data div{
-    border: 1px solid black;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     width: 50%;
 }
 
@@ -222,6 +231,13 @@ display: flex;
 
 
 /* details end  */
+
+.down-detail{
+    width: 90%;
+    margin-left: 5%;
+    height: 500px;
+    background-color: gray;
+}
 
 
 

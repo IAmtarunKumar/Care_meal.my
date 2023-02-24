@@ -38,7 +38,7 @@ let appendData = (data)=>{
     let img = document.querySelector(".img")
     img.setAttribute("src",data[0].img)
     let price = document.querySelector(".price")
-    price.innerHTML=`${Math.floor(Math.random() * 60)}`
+    price.innerHTML=`RM ${Math.floor(Math.random() * 60)}.00`
     let discount = document.querySelector(".discount")
     discount.innerHTML =data[0].discount
 
