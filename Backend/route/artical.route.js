@@ -1,72 +1,77 @@
 
 const express = require('express')
-const {MealdealModel} = require("../model/mealdeal.model")
+const {ArticalModel} = require("../model/artical.model")
 const jwt = require('jsonwebtoken')
-const mealdealRouter = express.Router()
+const articalRouter = express.Router()
 
 
 
-mealdealRouter.get("/a",(req,res)=>{
+articalRouter.get("/a",(req,res)=>{
     res.send("ab")
 })
 
+articalRouter.get("/",async(req,res)=>{
+  const data = await ArticalModel.find()
+  res.send(data)
+})
 
-mealdealRouter.get("/", async (req, res) => {
-    const data = await MealdealModel.find();
-    res.send(data);
-  });
+
+
+articalRouter.post("/", async (req, res) => {
+  const payload = req.body;
+  try {
+
+
+    const data = await ArticalModel.insertMany()
+
+    res.send("done")
+
   
-  mealdealRouter.post("/", async (req, res) => {
-    const payload = req.body;
-    try {
-
+    // const user = new ArticalModel(payload);
+    // await user.save();
+    // res.send({ msg: "Deal is posted","name" : payload.name });
     
-      const user = new MealdealModel(payload);
-      await user.save();
-      res.send({ msg: "Deal is posted","name" : payload.name });
-      
-    } catch (error) {
-      console.log(error);
-      res.send({ msg: "something went wrong mealdeal post" });
-    }
-  });
+  } catch (error) {
+    console.log(error);
+    res.send({ msg: "something went wrong mealdeal post" });
+  }
+});
 
 
+
+
+// userRouter.get("/", async (req, res) => {
+//     const data = await UserModel.find();
+//     res.send(data);
+//   });
   
+//   userRouter.post("/register", async (req, res) => {
+//     const payload = req.body;
+//     try {
+
+//       const data  = await UserModel.find({email : payload.email})
+//       if(data.length>0){
+//         res.send({"msg" : "This Email id is  Already registered"})
+//       }else{
 
 
-//search
-
-mealdealRouter.post("/get",async(req,res)=>{
-  const {shop,category,location} = req.body
-
-try {
-  const data = await MealdealModel.find({$or : [ {shop :shop} ,{category : category} ,{location : location} ]})
-  res.send(data)
-} catch (error) {
-  console.log(error)
-  res.send({"msg" : "something went wrong in get"})
-}
- 
-})
-
-
-mealdealRouter.get("/detail/:id",async(req,res)=>{
-  const param_data = req.params.id
-  const data = await MealdealModel.find({_id : param_data})
-  res.send(data)
-})
-
-// item.title.toLowerCase().includes(output.toLowerCase())
-
+//       const user = new UserModel(payload);
+//       await user.save();
+//       res.send({ msg: "singup successfull","name" : payload.name });
+//       }
+//     } catch (error) {
+//       console.log(error);
+//       res.send({ msg: "something went wrong" });
+//     }
+//   });
   
 //   userRouter.post("/login", async (req, res) => {
-//     const { email,pass } = req.body;
+//     const {email,password } = req.body;
   
 //     var token = jwt.sign({ course: "backend" }, "masai",{expiresIn:"1h"});
 //     console.log(token)
 //     try {
-//       const user = await UserModel.find({ email,pass });
+//       const user = await UserModel.find({email,password });
 //       console.log(user);
 //       if (user.length > 0) {
 //         res.send({ msg: "login successful", "token": token ,"name" : user[0].name });
@@ -114,5 +119,5 @@ mealdealRouter.get("/detail/:id",async(req,res)=>{
 
 
   module.exports = {
-    mealdealRouter
+    articalRouter
   }

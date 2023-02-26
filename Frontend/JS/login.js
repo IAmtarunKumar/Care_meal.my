@@ -45,7 +45,7 @@ let postdata = async (obj)=>{
             console.log(data)
             alert(data.msg)
             localStorage.setItem("token" , data.token)
-            localStorage.setItem("username", data.name)
+            sessionStorage.setItem("username", data.name)
             
             if(data.msg === "login successful"){
             setTimeout(() => {
@@ -56,7 +56,7 @@ let postdata = async (obj)=>{
         }
         }
     } catch (error) {
-        alert("Something Went Wrong")
+        alert("Wrong Credentials")
         
     }
 }

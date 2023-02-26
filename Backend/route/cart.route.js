@@ -1,27 +1,36 @@
 
 const express = require('express')
-const {MealdealModel} = require("../model/mealdeal.model")
+const {CartModel} = require("../model/cart.model")
 const jwt = require('jsonwebtoken')
-const mealdealRouter = express.Router()
+const cartRouter = express.Router()
 
 
 
-mealdealRouter.get("/a",(req,res)=>{
+cartRouter.get("/a",(req,res)=>{
     res.send("ab")
 })
 
+// cartRouter.get("/cart/:id",async(req,res)=>{
+//   const ID = req.params.id
+//   const data = await CartModel.find({_id : ID})
+//   res.send(data)
+// })
 
-mealdealRouter.get("/", async (req, res) => {
-    const data = await MealdealModel.find();
+
+
+
+
+cartRouter.get("/", async (req, res) => {
+    const data = await CartModel.find();
     res.send(data);
   });
   
-  mealdealRouter.post("/", async (req, res) => {
+  cartRouter.post("/", async (req, res) => {
     const payload = req.body;
     try {
 
     
-      const user = new MealdealModel(payload);
+      const user = new CartModel(payload);
       await user.save();
       res.send({ msg: "Deal is posted","name" : payload.name });
       
@@ -35,29 +44,29 @@ mealdealRouter.get("/", async (req, res) => {
   
 
 
-//search
+// //search
 
-mealdealRouter.post("/get",async(req,res)=>{
-  const {shop,category,location} = req.body
+// mealdealRouter.post("/get",async(req,res)=>{
+//   const {shop,category,location} = req.body
 
-try {
-  const data = await MealdealModel.find({$or : [ {shop :shop} ,{category : category} ,{location : location} ]})
-  res.send(data)
-} catch (error) {
-  console.log(error)
-  res.send({"msg" : "something went wrong in get"})
-}
+// try {
+//   const data = await MealdealModel.find({$or : [ {shop :shop} ,{category : category} ,{location : location} ]})
+//   res.send(data)
+// } catch (error) {
+//   console.log(error)
+//   res.send({"msg" : "something went wrong in get"})
+// }
  
-})
+// })
 
 
-mealdealRouter.get("/detail/:id",async(req,res)=>{
-  const param_data = req.params.id
-  const data = await MealdealModel.find({_id : param_data})
-  res.send(data)
-})
+// mealdealRouter.get("/detail/:id",async(req,res)=>{
+//   const param_data = req.params.id
+//   const data = await MealdealModel.find({_id : param_data})
+//   res.send(data)
+// })
 
-// item.title.toLowerCase().includes(output.toLowerCase())
+// // item.title.toLowerCase().includes(output.toLowerCase())
 
   
 //   userRouter.post("/login", async (req, res) => {
@@ -114,5 +123,5 @@ mealdealRouter.get("/detail/:id",async(req,res)=>{
 
 
   module.exports = {
-    mealdealRouter
+    cartRouter
   }

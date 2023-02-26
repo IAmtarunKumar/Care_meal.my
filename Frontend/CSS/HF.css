@@ -1,0 +1,308 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    box-sizing: border-box;
+}
+.top-nav{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
+#logo{
+    width: 60%;
+    padding: 10px;
+}
+
+.top-nav>div:nth-child(2){
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav>div:nth-child(2) img{
+    width: 80%;
+}
+
+.top-nav>div:nth-child(3){
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.top-nav>div:nth-child(3) a{
+        text-decoration: none;
+}
+.fb-btn{
+    background-color: #35619f;
+    color: white;
+    padding: 5px 15px 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+.email-btn{
+    background-color: #666666;
+    color: white;
+    padding: 5px 15px 7px 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px; 
+}
+.nav{
+    background-color: #2bb673;
+}
+
+.nav>ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.nav>ul li{
+    list-style: none;
+    color: white;
+    font-size: 19px;
+    padding: 15px;
+}
+.nav>ul li:hover{
+    background-color: #0f8049bb;
+}
+.nav>ul li a{
+    text-decoration: none;
+    color: white;
+}
+/* nav end  */
+ 
+
+
+/* main start  */
+.tab{
+    width: 90%;
+    margin-left: 5%;
+}
+.tab h1{
+    font-size: 40px; 
+    margin-top: 30px;
+     text-align: left; 
+
+}
+.tab span{
+    color: gray;
+}
+.down-tab{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.down-tab>div:nth-child(1) {
+    width: 70%;
+    
+   
+}
+
+.down-tab>div:nth-child(2) {
+    width: 30%;
+   
+}
+
+.down-tab p{
+    font-size:20px ;
+    color: rgba(0, 0, 0, 0.881);
+    padding: 20px;
+}
+.share{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    padding: 20px;
+    margin: 50px 0px 0px 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+.share p{
+    margin-top: -30px;
+}
+
+.share button{
+    border: none;
+    padding: 10px 50px;
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    margin-left: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.kind-nav{
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#kind_data{
+    width: 90%;
+    margin-left: 10%;
+ display: grid;
+ grid-template-columns: 30% 30% 30%; 
+ gap: 20px;
+padding: 10px;
+ 
+   
+    
+}
+
+
+.sub-div{
+    width: 100%;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ 
+}
+.user-img{
+    width: 30%;
+    border-radius: 50px;
+    padding: 5px;
+}
+.k-item{
+    margin-left: -100px;
+}
+.k-food-img{
+ width: 80%;
+ margin-left: 10%;
+ height: 400px;
+}
+
+.k-button button{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 50px;
+
+}
+.k-icon{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    color: gray;
+    font-size: 16px;
+    
+}
+.k-title{
+    padding: 10px;
+
+}
+.k-add{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.kind-nav div{
+
+    font-size: 20px;
+    border: 1px solid gray;
+    padding: 5px 15px;
+    background-color: rgba(128, 128, 128, 0.604);
+    border-radius: 10px;
+    
+
+}
+.kind-nav input{
+    border-radius: 10px;
+    width: 250px;
+    font-size: 20px;
+}
+
+.kind-nav select , .kind-nav>select option{
+    width: 250px;
+    border-radius: 10px;
+}
+
+.kind-nav button{
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 5px 30px;
+    color: white;
+    background-color: red;
+    border: none;
+}
+
+
+/* dropdown  */
+
+
+
+/* dropdown  */
+
+
+
+
+/* //append data div start  */
+
+
+
+
+
+/* //append data div end  */
+
+
+/* main end  */
+
+
+
+
+
+/* footer start  */
+#footer{
+    padding-top: 20px;
+    background-color: rgb(4,170,109);
+    color: white;
+}
+#footer>div:nth-child(1){
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li{
+    text-align: center;
+}
+
+#footer a{
+    text-decoration: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+   line-height: 25px;
+    
+}
+#footer a:hover{
+    text-decoration: underline;
+    
+}
+#footer p{
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+   
+#footer center{
+    font-size: 14px;
+}
+/* footer end  */
+
+
