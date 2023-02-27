@@ -80,6 +80,33 @@
 }
 /* nav end  */
  
+/* login start  */
+#user-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  #dropdown{
+   
+    margin: 0px 10px 0px -20px;
+    font-size: 20px;
+    border: 5px;
+    color: rgb(141, 130, 130);
+    padding: 10px 20px;
+  
+  }
+  #dropdown option{
+    font-size: 20px;
+    color: gray;
+    border: 1px solid gray;
+    padding: 20px 20px;
+    
+  }
+  
+  
+/* login end  */
 
 
 /* main start  */

@@ -44,9 +44,13 @@ setInterval(fiv,10000)
 
 
 let username = sessionStorage.getItem("username")
-console.log(username)
+// console.log(username)
 let user  = document.querySelector("#user-div")
-console.log(user)
+// console.log(user)
+
+
+
+
 if(username){
 user.innerHTML= `
 <span>
@@ -54,19 +58,52 @@ user.innerHTML= `
   </span>
 <span>  
 
-<select name="" id="dropdown">
-    <option value="${username}">${username}</option>
-    <option class="hover" value="">My Coupon</option>
-    <option value="">My Recipes</option>
-    <option value="">My CareMeal Profile</option>
-    <option value="">Update Profile</option>
-    <option value="">Account Setting</option>
-    <option value="">Logout</option>
+
+<select id="dropdown">
+    <option name="a" value="${username}">${username}</option>
+    <option class="hover" value="My Coupon">My Coupon</option>
+    <option value="Recipes">My Recipes</option>
+    <option value="My CareMeal Profile">My CareMeal Profile</option>
+    <option value="Update Profile">Update Profile</option>
+    <option value="Account Setting">Account Setting</option>
+    <option name="Logout" value="Logout">Logout</option>
 </select>
+
 <a href=""><img src="https://www.kindmeal.my/images/no_photo_header.png" alt=""></a>
 </span>
 `
 }
 
+const selectElement = document.getElementById("dropdown");
+selectElement.addEventListener("click", (event) => {
+  const selectedValue = event.target.value;
+//   console.log(selectedValue);
+if(selectedValue==="Logout"){
 
+
+    const result = confirm("Are you sure you want to Logout");
+if (result === true) {
+ 
+    sessionStorage.removeItem("username")
+    localStorage.removeItem("token")
+    window.location="index.html"
+
+} else {
+ 
+    console.log("x")
+
+}
+
+   
+}
+
+
+if(selectedValue==="My Coupon"){
+    setInterval(() => {
+        window.location.href="./HTML/cart.html"
+    }, 1000);
+}
+
+
+});
 

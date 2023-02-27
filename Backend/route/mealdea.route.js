@@ -27,12 +27,12 @@ mealdealRouter.get("/", async (req, res) => {
       
     } catch (error) {
       console.log(error);
-      res.send({ msg: "something went wrong mealdeal post" });
+      res.send({ msg: "something went wrong" });
     }
   });
 
 
-  
+
 
 
 //search
@@ -45,7 +45,7 @@ try {
   res.send(data)
 } catch (error) {
   console.log(error)
-  res.send({"msg" : "something went wrong in get"})
+  res.send({"msg" : "something went wrong"})
 }
  
 })
@@ -53,8 +53,14 @@ try {
 
 mealdealRouter.get("/detail/:id",async(req,res)=>{
   const param_data = req.params.id
-  const data = await MealdealModel.find({_id : param_data})
-  res.send(data)
+  try {
+    const data = await MealdealModel.find({_id : param_data})
+    res.send(data)
+  } catch (error) {
+    console.log(error)
+    res.send({"msg" : "something went wrong"}) 
+  }
+
 })
 
 // item.title.toLowerCase().includes(output.toLowerCase())

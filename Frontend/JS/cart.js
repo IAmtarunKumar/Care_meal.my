@@ -1,5 +1,39 @@
 
 
+// login start 
+
+let username = sessionStorage.getItem("username")
+
+let user  = document.querySelector("#user-div")
+console.log(user)
+
+
+
+
+if(username){
+user.innerHTML= `
+<span>
+<a href=""><img src="https://www.kindmeal.my/images/icon_notice.png" alt=""></a>
+  </span>
+<span>  
+
+<select name="" id="dropdown">
+    <option value="${username}">${username}</option>
+    <option class="hover" value="">My Coupon</option>
+    <option value="">My Recipes</option>
+    <option value="">My CareMeal Profile</option>
+    <option value="">Update Profile</option>
+    <option value="">Account Setting</option>
+    <option value="">Logout</option>
+</select>
+<a href=""><img src="https://www.kindmeal.my/images/no_photo_header.png" alt=""></a>
+</span>
+`
+}
+
+
+// login end 
+
 
 
 // let id = localStorage.getItem("data-id")
@@ -56,12 +90,24 @@ div.setAttribute("class","art-div")
     <span class="cart-dis">${item.discount}% Off</span>
     <span>Active</span>
     <br><br>
-    <button class="cart-btn">Live Coupon</button>
+    <button class="cart-btn" data-id=${item._id}  >Live Coupon</button>
   </div>
 
     `
 
     artical.append(div)
+})
+
+let cart_qr = document.querySelectorAll(".cart-btn")
+
+cart_qr.forEach((item)=>{
+    item.addEventListener("click",()=>{
+        let id = item.dataset.id
+        
+        console.log(id)
+        localStorage.setItem("QRCode_id", "id")
+        
+    })
 })
 
 }
